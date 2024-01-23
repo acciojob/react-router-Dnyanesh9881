@@ -5,6 +5,7 @@ import {Routes, Route} from "react-router";
 import Home from "./Home";
 import About from "./About";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const App = () => {
   let navigate=useNavigate();
@@ -15,8 +16,10 @@ const App = () => {
         <div>
           <div>
             <ul>
-              <li onClick={()=>navigate("/")}>Home</li>
-              <li onClick={()=>navigate("/about")}>About</li>
+              {/* <li onClick={()=>navigate("/")}>Home</li>
+              <li onClick={()=>navigate("/about")}>About</li> */}
+             <li><Link to={"/"}>Home</Link></li> 
+              <li><Link to={"/about"}>About</Link></li>
             </ul>
           </div>
           <Routes>
