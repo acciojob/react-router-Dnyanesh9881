@@ -14,14 +14,13 @@ const App = () => {
     <div>
         {/* Do not remove the main div */}
         <div>
-          <div>
-            <ul>
-              {/* <li onClick={()=>navigate("/")}>Home</li>
-              <li onClick={()=>navigate("/about")}>About</li> */}
+        <nav>
+        <ul>
              <li><Link to={"/"}>Home</Link></li> 
               <li><Link to={"/about"}>About</Link></li>
             </ul>
-          </div>
+        </nav>
+          
           <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/about" element={<About />}></Route>
